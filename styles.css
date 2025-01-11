@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
 * {
-box-sizing: border-box;
-margin: 10px;
-padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 img, picture, video, canvas, svg {
-  max-width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Roboto Light", sans-serif;
+    line-height: 1.5;
+    margin: 2rem;
+    background: #e9f0ff;
+    text-align: center;
+}
+
+header {
+    margin-top: 4rem;
 }
 
 section {
@@ -12,14 +27,23 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10rem;
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    gap: 1rem;
 }
 
-h1 {
-    text-align: center;
+div {
+    font-style: italic;
 }
 
-button {
+.amounts {
+    padding: 0 2rem;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.task-done button {
     background: #00800b;
     width: 8rem;
     height: 8rem;
@@ -31,6 +55,22 @@ button {
     text-transform: uppercase;
 }
 
-button:active {
+.task-done button:active {
     background: #1cbc25;
+}
+
+.options button {
+    background: #9c0001;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    color: #fff;
+    padding: 0.1rem;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.options button:active {
+    background: #ff0004;
 }
